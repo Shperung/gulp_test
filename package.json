@@ -1,0 +1,26 @@
+{
+  "name": "viktor",
+  "version": "1.0.0",
+  "description": "Gulp test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shperung/gulp_test.git"
+  },
+  "keywords": [
+    "gulp"
+  ],
+  "author": "viktor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shperung/gulp_test/issues"
+  },
+  "homepage": "https://github.com/Shperung/gulp_test#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.3.0"
+  }
+}
