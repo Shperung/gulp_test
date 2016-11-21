@@ -9,7 +9,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <title>web_pack</title>
 	 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-   ,<link rel="stylesheet" href="build.css">
+   <link rel="stylesheet" href="css/style.css">
 	 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -20,19 +20,27 @@
 </head>	
 
 <body >
- Стартовая конфигурация
-
- <pre>
-  
- </pre> 
+<pre>
+    gulp.task('less', function () {
+      return gulp.src('app/less/**/*.less')//все файлы с директории и подддиректорий
+        .pipe(less())
+        .pipe(gulp.dest('app/css'));
+    });
+</pre>
 
 
  <section id="text_test">
-   text_test
+  просто скомпилировать   <b>gulp less</b>
  </section>
 
  <section class="style2">
-   style2 text
+   Для watch
+
+<pre>
+    gulp.task("watch", function(){
+      gulp.watch('app/less/**/*.less', ['less']);
+    });
+</pre>
 
  </section>
 

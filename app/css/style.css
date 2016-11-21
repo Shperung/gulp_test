@@ -1,12 +1,14 @@
 p {
-  color: blue;
+  color: red;
 }
 p span {
-  color: red;
+  color: gold;
 }
 .sq {
   width: 100px;
   height: 100px;
   /*background-image: url(sq.jpg);*/
   background-size: cover;
+  color: green;
+  background-color: green;
 }

@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Shperung/gulp_test.git"
+    "url": "git+https://github.com/Shperung/gulp_test"
   },
   "keywords": [
     "gulp"
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/Shperung/gulp_test#readme",
   "devDependencies": {
+    "browser-sync": "^2.18.2",
     "gulp": "^3.9.1",
     "gulp-less": "^3.3.0"
   }
