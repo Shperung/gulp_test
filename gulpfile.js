@@ -42,4 +42,7 @@ gulp.task('browser_sinc', function(){
 /*watch*/
 gulp.task("watch", ['browser_sinc', 'less'] , function(){
 	gulp.watch('app/less/**/*.less', ['less']);
+	gulp.watch('app/*.html', browser_sinc.reload);
+	gulp.watch('app/js/*.js', browser_sinc.reload);
+
 });
